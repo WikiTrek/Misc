@@ -1,0 +1,79 @@
+<sites version="1.0" xmlns="http://www.mediawiki.org/xml/sitelist-1.0/">
+	<site type="mediawiki">
+		<globalid>wikitrek</globalid>
+		<group>wikitrek</group>
+		<languagecode>it</languagecode>
+		<path type="file_path">https://wiktrek.org/$1</path>
+		<path type="page_path">https://wikitrek.org/index.php/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>datatrek</globalid>
+		<group>wikitrek</group>
+		<languagecode>it</languagecode>
+		<path type="file_path">https://data.wiktrek.org/$1</path>
+		<path type="page_path">https://data.wikitrek.org/index.php/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>enma</globalid>
+		<languagecode>en</languagecode>
+		<group>wikia</group>
+		<path type="file_path">https://memory-alpha.fandom.com/$1</path>
+		<path type="page_path">https://memory-alpha.fandom.com/wiki/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>itma</globalid>
+		<group>wikia</group>
+		<languagecode>it</languagecode>
+		<path type="file_path">http://it.memory-alpha.org/$1</path>
+		<path type="page_path">http://it.memory-alpha.org/wiki/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>enmb</globalid>
+		<group>wikia</group>
+		<languagecode>en</languagecode>
+		<path type="file_path">https://memory-beta.fandom.com/$1</path>
+		<path type="page_path">https://memory-beta.fandom.com/wiki/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>sto</globalid>
+		<group>gamepedia</group>
+		<languagecode>en</languagecode>
+		<path type="file_path">https://sto.gamepedia.com/$1</path>
+		<path type="page_path">https://sto.gamepedia.com/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>enwiki</globalid>
+		<languagecode>en</languagecode>
+		<group>wikipedia</group>
+		<path type="file_path">https://en.wikipedia.org/w/$1</path>
+		<path type="page_path">https://en.wikipedia.org/wiki/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>itma</globalid>
+		<languagecode>it</languagecode>
+		<group>wikia</group>
+		<path type="file_path">https://memory-alpha.fandom.com/it/$1</path>
+		<path type="page_path">https://memory-alpha.fandom.com/it/wiki/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>itwiki</globalid>
+		<languagecode>it</languagecode>
+		<group>wikipedia</group>
+		<path type="file_path">https://it.wikipedia.org/w/$1</path>
+		<path type="page_path">https://it.wikipedia.org/wiki/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>wikitrek-loc</globalid>
+		<group>wikitrek</group>
+		<languagecode>it</languagecode>
+		<path type="file_path">http://memorydm8/wikitrek/$1</path>
+		<path type="page_path">http://memorydm8/wikitrek/index.php/$1</path>
+	</site>
+	<site type="mediawiki">
+		<globalid>datatrek-loc</globalid>
+		<group>wikitrek</group>
+		<languagecode>it</languagecode>
+		<path type="file_path">http://memorydm8/datatrek/$1</path>
+		<path type="page_path">http://memorydm8/datatrek/index.php/$1</path>
+	</site>
+</sites>
