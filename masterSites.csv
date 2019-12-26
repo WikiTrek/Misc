@@ -1,0 +1,9 @@
+globalid / iw_prefix|group|page_path / iw_url|iw_api|file_path|languagecode|Descrizione
+wikitrek|wikitrek|https://wikitrek.org/index.php/$1|https://wikitrek.org/api.php|https://wiktrek.org/$1|it|WikiTrek
+datatrek|wikitrek|https://data.wikitrek.org/index.php/$1|https://data.wikitrek.org/api.php|https://data.wiktrek.org/$1|it|DataTrek
+enma|wikia|https://memory-alpha.fandom.com/wiki/$1|https://memory-alpha.fandom.com/api.php|https://memory-alpha.fandom.com/$1|en|Memory Alpha (inglese)
+itma|wikia|https://memory-alpha.fandom.com/it/wiki/$1|https://memory-alpha.fandom.com/it/api.php|https://memory-alpha.fandom.com/it/$1|it|Memory Alpha (italiano)
+enmb|wikia|https://memory-beta.fandom.com/wiki/$1|https://memory-beta.fandom.com/api.php|https://memory-beta.fandom.com/$1|en|Memory Beta (inglese)
+sto|gamepedia|https://sto.gamepedia.com/$1|https://sto.gamepedia.com/api.php|https://sto.gamepedia.com/$1|en|Star Trek Online (inglese)
+enwiki|wikipedia|https://en.wikipedia.org/wiki/$1|https://en.wikipedia.org/w/api.php|https://en.wikipedia.org/w/$1|en|Wikipedia inglese
+itwiki|wikipedia|https://it.wikipedia.org/wiki/$1|https://it.wikipedia.org/w/api.php|https://it.wikipedia.org/w/$1|it|Wikipedia italiana
