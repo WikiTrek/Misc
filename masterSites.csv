@@ -1,13 +1,13 @@
-globalid / iw_prefix|group|page_path / iw_url|iw_api|file_path|languagecode|Descrizione
-wikitrek|wikitrek|https://wikitrek.org/wiki/$1|https://wikitrek.org/wt/index.php|https://wikitrek.org/wt/$1|it|WikiTrek
-datatrek|wikitrek|https://data.wikitrek.org/wiki/$1|https://data.wikitrek.org/dt/api.php|https://data.wikitrek.org/dt/$1|it|DataTrek
-enma|wikia|https://memory-alpha.fandom.com/wiki/$1|https://memory-alpha.fandom.com/api.php|https://memory-alpha.fandom.com/$1|en|Memory Alpha (inglese)
-dema|wikia|https://memory-alpha.fandom.com/de/wiki/$1|https://memory-alpha.fandom.com/de/api.php|https://memory-alpha.fandom.com/de/$1|de|Memory Alpha (tedesco)
-itma|wikia|https://memory-alpha.fandom.com/it/wiki/$1|https://memory-alpha.fandom.com/it/api.php|https://memory-alpha.fandom.com/it/$1|it|Memory Alpha (italiano)
-enmb|wikia|https://memory-beta.fandom.com/wiki/$1|https://memory-beta.fandom.com/api.php|https://memory-beta.fandom.com/$1|en|Memory Beta (inglese)
-dema|wikia|https://memory-beta.fandom.com/de/wiki/$1|https://memory-beta.fandom.com/de/api.php|https://memory-beta.fandom.com/de/$1|de|Memory Beta (tedesco)
-sto|gamepedia|https://stowiki.net/wiki/$1|https://stowiki.net/w/api.php|https://stowiki.net/w/$1|en|Star Trek Online (inglese)
-enwiki|wikipedia|https://en.wikipedia.org/wiki/$1|https://en.wikipedia.org/w/api.php|https://en.wikipedia.org/w/$1|en|Wikipedia inglese
-itwiki|wikipedia|https://it.wikipedia.org/wiki/$1|https://it.wikipedia.org/w/api.php|https://it.wikipedia.org/w/$1|it|Wikipedia italiana
-fanlore|fanlore|https://fanlore.org/wiki/$1|https://fanlore.org/w/api.php|https://fanlore.org/w/$1|en|Fanlore (inglese)
-trekipedia|trekipedia|http://trekipedia.com/file/$1|http://trekipedia.com/mw/api.php|http://trekipedia.com/mw/$1|en|Trekipedia (inglese)
+globalid / iw_prefix,group,page_path / iw_url,iw_api,file_path,languagecode,Descrizione
+wikitrek,wikitrek,https://wikitrek.org/wiki/$1,https://wikitrek.org/wt/index.php,https://wikitrek.org/wt/$1,it,WikiTrek
+datatrek,wikitrek,https://data.wikitrek.org/wiki/$1,https://data.wikitrek.org/dt/api.php,https://data.wikitrek.org/dt/$1,it,DataTrek
+enma,wikia,https://memory-alpha.fandom.com/wiki/$1,https://memory-alpha.fandom.com/api.php,https://memory-alpha.fandom.com/$1,en,Memory Alpha (inglese)
+dema,wikia,https://memory-alpha.fandom.com/de/wiki/$1,https://memory-alpha.fandom.com/de/api.php,https://memory-alpha.fandom.com/de/$1,de,Memory Alpha (tedesco)
+itma,wikia,https://memory-alpha.fandom.com/it/wiki/$1,https://memory-alpha.fandom.com/it/api.php,https://memory-alpha.fandom.com/it/$1,it,Memory Alpha (italiano)
+enmb,wikia,https://memory-beta.fandom.com/wiki/$1,https://memory-beta.fandom.com/api.php,https://memory-beta.fandom.com/$1,en,Memory Beta (inglese)
+dema,wikia,https://memory-beta.fandom.com/de/wiki/$1,https://memory-beta.fandom.com/de/api.php,https://memory-beta.fandom.com/de/$1,de,Memory Beta (tedesco)
+sto,gamepedia,https://stowiki.net/wiki/$1,https://stowiki.net/w/api.php,https://stowiki.net/w/$1,en,Star Trek Online (inglese)
+enwiki,wikipedia,https://en.wikipedia.org/wiki/$1,https://en.wikipedia.org/w/api.php,https://en.wikipedia.org/w/$1,en,Wikipedia inglese
+itwiki,wikipedia,https://it.wikipedia.org/wiki/$1,https://it.wikipedia.org/w/api.php,https://it.wikipedia.org/w/$1,it,Wikipedia italiana
+fanlore,fanlore,https://fanlore.org/wiki/$1,https://fanlore.org/w/api.php,https://fanlore.org/w/$1,en,Fanlore (inglese)
+trekipedia,trekipedia,http://trekipedia.com/file/$1,http://trekipedia.com/mw/api.php,http://trekipedia.com/mw/$1,en,Trekipedia (inglese)
