@@ -11,4 +11,3 @@ enwiki,wikipedia,https://en.wikipedia.org/wiki/$1,https://en.wikipedia.org/w/api
 itwiki,wikipedia,https://it.wikipedia.org/wiki/$1,https://it.wikipedia.org/w/api.php,https://it.wikipedia.org/w/$1,it,Wikipedia italiana
 fanlore,fanlore,https://fanlore.org/wiki/$1,https://fanlore.org/w/api.php,https://fanlore.org/w/$1,en,Fanlore (inglese)
 trekipedia,trekipedia,http://trekipedia.com/file/$1,http://trekipedia.com/mw/api.php,http://trekipedia.com/mw/$1,en,Trekipedia (inglese)
-memoryprime,wikibasecloud,https://memory-prime.wikibase.cloud/wiki/$1,https://memory-prime.wikibase.cloud/w/index.php,https://memory-prime.wikibase.cloud/w/$1,en,Memory Prime
