@@ -1,0 +1,13 @@
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('wikitrek', 'https://wikitrek.org/wiki/$1', 'https://wikitrek.org/wt/index.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('datatrek', 'https://data.wikitrek.org/wiki/$1', 'https://data.wikitrek.org/dt/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('enma', 'https://memory-alpha.fandom.com/wiki/$1', 'https://memory-alpha.fandom.com/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('dema', 'https://memory-alpha.fandom.com/de/wiki/$1', 'https://memory-alpha.fandom.com/de/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('itma', 'https://memory-alpha.fandom.com/it/wiki/$1', 'https://memory-alpha.fandom.com/it/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('enmb', 'https://memory-beta.fandom.com/wiki/$1', 'https://memory-beta.fandom.com/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('dema', 'https://memory-beta.fandom.com/de/wiki/$1', 'https://memory-beta.fandom.com/de/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('sto', 'https://stowiki.net/wiki/$1', 'https://stowiki.net/w/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('enwiki', 'https://en.wikipedia.org/wiki/$1', 'https://en.wikipedia.org/w/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('itwiki', 'https://it.wikipedia.org/wiki/$1', 'https://it.wikipedia.org/w/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('fanlore', 'https://fanlore.org/wiki/$1', 'https://fanlore.org/w/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('trekipedia', 'http://trekipedia.com/file/$1', 'http://trekipedia.com/mw/api.php', '', 0, 0);
+INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('memoryprime', 'https://memory-prime.wikibase.cloud/wiki/$1', 'https://memory-prime.wikibase.cloud/w/index.php', '', 0, 0);
