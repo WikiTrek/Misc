@@ -44,7 +44,8 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add titles.lua sites.xml interwiki.sql
+          git add generated/
+          git add luaArray.lua sitelinkSites.xml interwiki.sql
           if git diff --staged --quiet; then
             echo "No changes"
           else
