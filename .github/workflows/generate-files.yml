@@ -1,0 +1,36 @@
+name: Generate Files from CSV
+
+on:
+  push:
+    paths:
+      - 'data.csv'  # Your CSV path
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate files
+        run: |
+          python generate_files.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add titles.lua sites.xml interwiki.sql
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update generated files from data.csv [skip ci]"
+            git push
+          fi
