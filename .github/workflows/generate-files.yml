@@ -3,13 +3,30 @@ name: Generate Files from CSV
 on:
   push:
     paths:
-      - 'data.csv'  # Your CSV path
+      - 'masterSites.csv'
 
 permissions:
   contents: write
 
 jobs:
+  filter:
+    runs-on: ubuntu-latest
+    outputs:
+      csv-changed: ${{ steps.changes.outputs.csv }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check paths
+        uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            csv:
+              - 'masterSites.csv'
+
   generate:
+    needs: filter
+    if: ${{ needs.filter.outputs.csv-changed == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,7 +40,7 @@ jobs:
         run: |
           python generate_files.py
 
-      - name: Commit & push if changed
+      - name: Commit & push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
@@ -31,6 +48,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes"
           else
-            git commit -m "Update generated files from data.csv [skip ci]"
+            git commit -m "Update generated files from masterSites.csv [skip ci]"
             git push
           fi
