@@ -6,6 +6,7 @@ Generates titles.lua, sites.xml, interwiki.sql from masterSites.csv.
 import csv
 import os
 import xml.etree.ElementTree as ET
+from xml.dom import minidom 
 
 CSV_FILE = 'masterSites.csv'
 GENERATED_DIR = 'generated'
@@ -44,9 +45,12 @@ def generate_sites_xml():
             ET.SubElement(site, 'path', type='file_path').text = row['file_path'].strip()
             ET.SubElement(site, 'path', type='page_path').text = row['page_path / iw_url'].strip()
     
-    tree = ET.ElementTree(sites)
-    with open(OUTPUTS['xml'], 'wb') as f:
-        tree.write(f, encoding='utf-8', xml_declaration=True)
+    rough = ET.tostring(sites, encoding='unicode')
+    reparsed = minidom.parseString(rough)
+    pretty = reparsed.toprettyxml(indent='  ')
+    
+    with open(OUTPUTS['xml'], 'w', encoding='utf-8') as f:
+        f.write(pretty)
 
 def generate_sql_inserts():
     with open(CSV_FILE, 'r', encoding='utf-8') as f, open(OUTPUTS['sql'], 'w', encoding='utf-8') as out:
