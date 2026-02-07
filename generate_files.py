@@ -4,13 +4,15 @@ Generates titles.lua, sites.xml, interwiki.sql from masterSites.csv.
 """
 
 import csv
+import os
 import xml.etree.ElementTree as ET
 
 CSV_FILE = 'masterSites.csv'
+GENERATED_DIR = 'generated'
 OUTPUTS = {
-    'lua': 'titles.lua',
-    'xml': 'sites.xml',
-    'sql': 'interwiki.sql'
+    'lua': f'{GENERATED_DIR}/luaArray.lua',
+    'xml': f'{GENERATED_DIR}/sitelinkSites.xml',
+    'sql': f'{GENERATED_DIR}/interwiki.sql'
 }
 
 def generate_lua_titles():
@@ -58,6 +60,8 @@ def generate_sql_inserts():
             out.write(sql + '\n')
 
 if __name__ == '__main__':
+    # Ensure dir exists (add to functions or main)
+    os.makedirs(GENERATED_DIR, exist_ok=True)
     generate_lua_titles()
     generate_sites_xml()
     generate_sql_inserts()
