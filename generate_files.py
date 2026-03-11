@@ -13,7 +13,8 @@ GENERATED_DIR = 'generated'
 OUTPUTS = {
     'lua': f'{GENERATED_DIR}/luaArray.lua',
     'xml': f'{GENERATED_DIR}/sitelinkSites.xml',
-    'sql': f'{GENERATED_DIR}/interwiki.sql'
+    'sql': f'{GENERATED_DIR}/interwiki.sql',
+    'md':  f'{GENERATED_DIR}/masterSites.md',
 }
 
 def generate_lua_titles():
@@ -63,10 +64,39 @@ def generate_sql_inserts():
             sql = f"""INSERT INTO interwiki (iw_prefix, iw_url, iw_api, iw_wikiid, iw_local, iw_trans) VALUES ('{prefix}', '{url}', '{api}', '', 0, 0);"""
             out.write(sql + '\n')
 
+def escape_md_cell(text: str) -> str:
+    # Escape pipe to avoid breaking table columns
+    return text.replace('|', r'\|')
+
+def generate_markdown_table():
+    with open(CSV_FILE, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        fieldnames = reader.fieldnames or []
+
+        # Header row
+        header_cells = [escape_md_cell(h) for h in fieldnames]
+        header_line = '| ' + ' | '.join(header_cells) + ' |'
+
+        # Separator row
+        separator_line = '| ' + ' | '.join(['---'] * len(fieldnames)) + ' |'
+
+        rows = []
+        for row in reader:
+            cells = [escape_md_cell((row.get(col, '') or '').strip()) for col in fieldnames]
+            rows.append('| ' + ' | '.join(cells) + ' |')
+
+    with open(OUTPUTS['md'], 'w', encoding='utf-8') as out:
+        out.write(header_line + '\n')
+        out.write(separator_line + '\n')
+        for line in rows:
+            out.write(line + '\n')
+
+
 if __name__ == '__main__':
     # Ensure dir exists (add to functions or main)
     os.makedirs(GENERATED_DIR, exist_ok=True)
     generate_lua_titles()
     generate_sites_xml()
     generate_sql_inserts()
+    generate_markdown_table()
     print("Generated:", ', '.join(OUTPUTS.values()))
